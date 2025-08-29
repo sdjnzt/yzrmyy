@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, HashRouter } from 'react-router-dom';
 import { Layout } from 'antd';
 import MainLayout from './components/Layout/MainLayout';
 import PrivateRoute from './components/PrivateRoute';
@@ -21,33 +21,35 @@ const { Content } = Layout;
 
 const App: React.FC = () => {
   return (
-    <UserProvider>
-      <Routes>
-        <Route path="/login" element={<Login />} />
-        <Route path="/*" element={
-          <PrivateRoute>
-            <MainLayout>
-              <Content className="site-layout-content">
-                <Routes>
-                  <Route path="/" element={<Dashboard />} />
-                  <Route path="/dashboard" element={<Dashboard />} />
-                  <Route path="/system" element={<SystemManagement />} />
-                  <Route path="/video" element={<VideoManagement />} />
-                  <Route path="/alarm" element={<AlarmManagement />} />
-                  <Route path="/security" element={<SecurityManagement />} />
-                  <Route path="/patrol" element={<PatrolManagement />} />
-                  <Route path="/visitor" element={<VisitorManagement />} />
-                  <Route path="/device" element={<DeviceManagement />} />
-                  <Route path="/user-security" element={<UserSecurityManagement />} />
-                  <Route path="/operation" element={<OperationManagement />} />
-                  <Route path="/reports" element={<ReportAnalysis />} />
-                </Routes>
-              </Content>
-            </MainLayout>
-          </PrivateRoute>
-        } />
-      </Routes>
-    </UserProvider>
+    <HashRouter>
+      <UserProvider>
+        <Routes>
+          <Route path="/login" element={<Login />} />
+          <Route path="/*" element={
+            <PrivateRoute>
+              <MainLayout>
+                <Content className="site-layout-content">
+                  <Routes>
+                    <Route path="/" element={<Dashboard />} />
+                    <Route path="/dashboard" element={<Dashboard />} />
+                    <Route path="/system" element={<SystemManagement />} />
+                    <Route path="/video" element={<VideoManagement />} />
+                    <Route path="/alarm" element={<AlarmManagement />} />
+                    <Route path="/security" element={<SecurityManagement />} />
+                    <Route path="/patrol" element={<PatrolManagement />} />
+                    <Route path="/visitor" element={<VisitorManagement />} />
+                    <Route path="/device" element={<DeviceManagement />} />
+                    <Route path="/user-security" element={<UserSecurityManagement />} />
+                    <Route path="/operation" element={<OperationManagement />} />
+                    <Route path="/reports" element={<ReportAnalysis />} />
+                  </Routes>
+                </Content>
+              </MainLayout>
+            </PrivateRoute>
+          } />
+        </Routes>
+      </UserProvider>
+    </HashRouter>
   );
 };
 

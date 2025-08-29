@@ -126,19 +126,19 @@ const VideoManagement: React.FC = () => {
     const camera = cameras.find(c => c.id === selectedCamera);
     
     // 根据摄像头ID选择对应的媒体文件
-    const getCameraMedia = (cameraId: string) => {
-      switch (cameraId) {
-        case '1': return { type: 'video', src: '/img/11.mp4' }; // 门诊楼大厅-01 - 视频
-        case '2': return { type: 'image', src: '/img/13.png' }; // 急诊科入口-02
-        case '3': return { type: 'image', src: '/img/14.png' }; // 住院部走廊-03
-        case '4': return { type: 'image', src: '/img/12.png' }; // 药房窗口-04
-        case '5': return { type: 'image', src: '/img/13.png' }; // 停车场-05
-        case '6': return { type: 'image', src: '/img/14.png' }; // 后门通道-06
-        default: return { type: 'image', src: '/img/12.png' };
-      }
-    };
+      const getCameraMedia = (cameraId: string) => {
+    switch (cameraId) {
+      case '1': return { type: 'video', src: './img/11.mp4' }; // 门诊楼大厅-01 - 视频
+      case '2': return { type: 'image', src: './img/13.png' }; // 急诊科入口-02
+      case '3': return { type: 'image', src: './img/14.png' }; // 住院部走廊-03
+      case '4': return { type: 'image', src: './img/12.png' }; // 药房窗口-04
+      case '5': return { type: 'image', src: './img/13.png' }; // 停车场-05
+      case '6': return { type: 'image', src: './img/14.png' }; // 后门通道-06
+      default: return { type: 'image', src: './img/12.png' };
+    }
+  };
     
-    const mediaInfo = camera ? getCameraMedia(camera.id) : { type: 'image', src: '/img/12.png' };
+    const mediaInfo = camera ? getCameraMedia(camera.id) : { type: 'image', src: './img/12.png' };
     
     return (
       <div style={{ 
@@ -421,17 +421,17 @@ const VideoManagement: React.FC = () => {
             <div style={{ maxHeight: '400px', overflowY: 'auto' }}>
               {cameras.map(camera => {
                                  // 获取摄像头对应的缩略图
-                 const getCameraThumbnail = (cameraId: string) => {
-                   switch (cameraId) {
-                     case '1': return { type: 'video', src: '/img/11.mp4' };
-                     case '2': return { type: 'image', src: '/img/13.png' };
-                     case '3': return { type: 'image', src: '/img/14.png' };
-                     case '4': return { type: 'image', src: '/img/12.png' };
-                     case '5': return { type: 'image', src: '/img/13.png' };
-                     case '6': return { type: 'image', src: '/img/14.png' };
-                     default: return { type: 'image', src: '/img/12.png' };
-                   }
-                 };
+                   const getCameraThumbnail = (cameraId: string) => {
+    switch (cameraId) {
+      case '1': return { type: 'video', src: './img/11.mp4' };
+      case '2': return { type: 'image', src: './img/13.png' };
+      case '3': return { type: 'image', src: './img/14.png' };
+      case '4': return { type: 'image', src: './img/12.png' };
+      case '5': return { type: 'image', src: './img/13.png' };
+      case '6': return { type: 'image', src: './img/14.png' };
+      default: return { type: 'image', src: './img/12.png' };
+    }
+  };
                 
                 return (
                   <div 
