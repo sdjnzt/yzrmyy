@@ -25,24 +25,110 @@ const App: React.FC = () => {
       <UserProvider>
         <Routes>
           <Route path="/login" element={<Login />} />
-          <Route path="/*" element={
+          <Route path="/" element={
             <PrivateRoute>
               <MainLayout>
                 <Content className="site-layout-content">
-                  <Routes>
-                    <Route path="/" element={<Dashboard />} />
-                    <Route path="/dashboard" element={<Dashboard />} />
-                    <Route path="/system" element={<SystemManagement />} />
-                    <Route path="/video" element={<VideoManagement />} />
-                    <Route path="/alarm" element={<AlarmManagement />} />
-                    <Route path="/security" element={<SecurityManagement />} />
-                    <Route path="/patrol" element={<PatrolManagement />} />
-                    <Route path="/visitor" element={<VisitorManagement />} />
-                    <Route path="/device" element={<DeviceManagement />} />
-                    <Route path="/user-security" element={<UserSecurityManagement />} />
-                    <Route path="/operation" element={<OperationManagement />} />
-                    <Route path="/reports" element={<ReportAnalysis />} />
-                  </Routes>
+                  <Dashboard />
+                </Content>
+              </MainLayout>
+            </PrivateRoute>
+          } />
+          <Route path="/dashboard" element={
+            <PrivateRoute>
+              <MainLayout>
+                <Content className="site-layout-content">
+                  <Dashboard />
+                </Content>
+              </MainLayout>
+            </PrivateRoute>
+          } />
+          <Route path="/system" element={
+            <PrivateRoute>
+              <MainLayout>
+                <Content className="site-layout-content">
+                  <SystemManagement />
+                </Content>
+              </MainLayout>
+            </PrivateRoute>
+          } />
+          <Route path="/video" element={
+            <PrivateRoute>
+              <MainLayout>
+                <Content className="site-layout-content">
+                  <VideoManagement />
+                </Content>
+              </MainLayout>
+            </PrivateRoute>
+          } />
+          <Route path="/alarm" element={
+            <PrivateRoute>
+              <MainLayout>
+                <Content className="site-layout-content">
+                  <AlarmManagement />
+                </Content>
+              </MainLayout>
+            </PrivateRoute>
+          } />
+          <Route path="/security" element={
+            <PrivateRoute>
+              <MainLayout>
+                <Content className="site-layout-content">
+                  <SecurityManagement />
+                </Content>
+              </MainLayout>
+            </PrivateRoute>
+          } />
+          <Route path="/patrol" element={
+            <PrivateRoute>
+              <MainLayout>
+                <Content className="site-layout-content">
+                  <PatrolManagement />
+                </Content>
+              </MainLayout>
+            </PrivateRoute>
+          } />
+          <Route path="/visitor" element={
+            <PrivateRoute>
+              <MainLayout>
+                <Content className="site-layout-content">
+                  <VisitorManagement />
+                </Content>
+              </MainLayout>
+            </PrivateRoute>
+          } />
+          <Route path="/device" element={
+            <PrivateRoute>
+              <MainLayout>
+                <Content className="site-layout-content">
+                  <DeviceManagement />
+                </Content>
+              </MainLayout>
+            </PrivateRoute>
+          } />
+          <Route path="/user-security" element={
+            <PrivateRoute>
+              <MainLayout>
+                <Content className="site-layout-content">
+                  <UserSecurityManagement />
+                </Content>
+              </MainLayout>
+            </PrivateRoute>
+          } />
+          <Route path="/operation" element={
+            <PrivateRoute>
+              <MainLayout>
+                <Content className="site-layout-content">
+                  <OperationManagement />
+                </Content>
+              </MainLayout>
+            </PrivateRoute>
+          } />
+          <Route path="/reports" element={
+            <PrivateRoute>
+              <MainLayout>
+                <Content className="site-layout-content">
+                  <ReportAnalysis />
                 </Content>
               </MainLayout>
             </PrivateRoute>

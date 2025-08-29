@@ -1,5 +1,4 @@
 import React, { createContext, useContext, useState, ReactNode } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { message } from 'antd';
 
 interface User {
@@ -38,8 +37,6 @@ export const UserProvider: React.FC<UserProviderProps> = ({ children }) => {
     const savedUser = localStorage.getItem('user');
     return savedUser ? JSON.parse(savedUser) : null;
   });
-  
-  const navigate = useNavigate();
 
   const login = (userData: User) => {
     setUser(userData);
@@ -55,9 +52,9 @@ export const UserProvider: React.FC<UserProviderProps> = ({ children }) => {
     
     message.success('已成功退出登录');
     
-    // 跳转到登录页面
+    // 跳转到登录页面 - 使用window.location而不是navigate
     setTimeout(() => {
-      navigate('/login');
+      window.location.hash = '#/login';
     }, 1000);
   };
 
