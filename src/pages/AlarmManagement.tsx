@@ -47,11 +47,11 @@ const AlarmManagement: React.FC = () => {
       level: 'medium', 
       location: '药房入口', 
       device: '药房门禁-01', 
-      time: '2025-08-30 09:15:00', 
+      time: '2025-08-29 09:15:00', 
       status: '已处理', 
       description: '药房工作人员忘记携带门禁卡，触发异常报警',
-      operator: '李保安',
-      processTime: '2025-08-30 09:20:00',
+      operator: '李明华',
+      processTime: '2025-08-29 09:20:00',
       processResult: '核实身份后正常进入，已提醒携带门禁卡'
     },
     { 
@@ -60,7 +60,7 @@ const AlarmManagement: React.FC = () => {
       level: 'low', 
       location: '门诊大厅', 
       device: '监控摄像头-05', 
-      time: '2025-08-30 08:30:00', 
+      time: '2025-08-29 08:30:00', 
       status: '待处理', 
       description: '门诊大厅监控画面模糊，可能镜头需要清洁',
       operator: '',
@@ -73,11 +73,11 @@ const AlarmManagement: React.FC = () => {
       level: 'low', 
       location: '急诊科走廊', 
       device: '区域监控-02', 
-      time: '2025-08-14 23:45:00', 
+      time: '2025-08-28 23:45:00', 
       status: '已处理', 
       description: '夜间急诊科走廊有人员长时间滞留',
       operator: '值班保安',
-      processTime: '2025-08-14 23:50:00',
+      processTime: '2025-08-28 23:50:00',
       processResult: '核实为等候家属，情况正常'
     },
     { 
@@ -86,11 +86,11 @@ const AlarmManagement: React.FC = () => {
       level: 'high', 
       location: '配电房', 
       device: '烟感器-08', 
-      time: '2025-08-14 16:20:00', 
+      time: '2025-08-28 16:20:00', 
       status: '已处理', 
       description: '配电房烟感器报警，检测到异常烟雾',
       operator: '维修工程师',
-      processTime: '2025-08-14 16:25:00',
+      processTime: '2025-08-28 16:25:00',
       processResult: '设备过热导致轻微烟雾，已检修排除故障'
     },
     { 
@@ -99,11 +99,11 @@ const AlarmManagement: React.FC = () => {
       level: 'medium', 
       location: '信息科机房', 
       device: '网络交换机-01', 
-      time: '2025-08-14 14:10:00', 
+      time: '2025-08-28 14:10:00', 
       status: '已处理', 
       description: '部分监控设备网络连接不稳定',
       operator: '网络管理员',
-      processTime: '2025-08-14 14:30:00',
+      processTime: '2025-08-28 14:30:00',
       processResult: '重启交换机，网络连接恢复正常'
     },
     { 
@@ -112,11 +112,11 @@ const AlarmManagement: React.FC = () => {
       level: 'medium', 
       location: '疫苗冷库', 
       device: '温度传感器-03', 
-      time: '2025-08-14 11:00:00', 
+      time: '2025-08-28 11:00:00', 
       status: '已处理', 
       description: '疫苗冷库温度超出正常范围',
       operator: '药剂科主任',
-      processTime: '2025-08-14 11:15:00',
+      processTime: '2025-08-28 11:15:00',
       processResult: '调整制冷设备参数，温度已恢复正常'
     },
     {
@@ -125,11 +125,11 @@ const AlarmManagement: React.FC = () => {
       level: 'high',
       location: '手术室区域',
       device: '红外探测器-12',
-      time: '2025-08-14 02:30:00',
+      time: '2025-08-28 02:30:00',
       status: '已处理',
       description: '手术室区域深夜检测到异常移动',
       operator: '夜班保安',
-      processTime: '2025-08-14 02:35:00',
+      processTime: '2025-08-28 02:35:00',
       processResult: '巡查确认为清洁工人正常工作，已登记'
     },
     {

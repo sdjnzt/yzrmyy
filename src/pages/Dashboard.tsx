@@ -56,11 +56,11 @@ const Dashboard: React.FC = () => {
   ];
 
   const recentAlarms = [
-    { id: 1, type: '门禁异常', location: '门诊楼1层', time: '2025-08-30 14:30', status: '已处理', level: 'medium' },
-    { id: 2, type: '视频丢失', location: '住院部3层', time: '2025-08-30 13:45', status: '处理中', level: 'high' },
-    { id: 3, type: '人员聚集', location: '急诊科', time: '2025-08-30 12:20', status: '已处理', level: 'low' },
-    { id: 4, type: '设备离线', location: '药房', time: '2025-08-30 11:15', status: '待处理', level: 'high' },
-    { id: 5, type: '异常访问', location: '行政楼', time: '2025-08-30 10:30', status: '已处理', level: 'medium' },
+    { id: 1, type: '门禁异常', location: '门诊楼1层', time: '2025-08-29 14:30', status: '已处理', level: 'medium' },
+    { id: 2, type: '视频丢失', location: '住院部3层', time: '2025-08-29 13:45', status: '处理中', level: 'high' },
+    { id: 3, type: '人员聚集', location: '急诊科', time: '2025-08-29 12:20', status: '已处理', level: 'low' },
+    { id: 4, type: '设备离线', location: '药房', time: '2025-08-29 11:15', status: '待处理', level: 'high' },
+    { id: 5, type: '异常访问', location: '行政楼', time: '2025-08-29 10:30', status: '已处理', level: 'medium' },
   ];
 
   const securityPatrols = [

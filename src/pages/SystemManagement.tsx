@@ -92,25 +92,25 @@ const SystemManagement: React.FC = () => {
     totalUsers: 89,
     activeUsers: 67,
     systemHealth: 92,
-    lastBackup: '2025-08-30 02:00'
+    lastBackup: '2025-08-29 02:00'
   });
 
   // 模拟数据
   const deviceData = [
-    { id: 1, name: '门禁控制器-01', type: '门禁系统', location: '门诊楼1层', status: '在线', ip: '192.168.1.100', lastUpdate: '2025-08-30 15:30', version: 'v2.1.0', manufacturer: '海康威视' },
-    { id: 2, name: '摄像头-001', type: '视频监控', location: '门诊楼大厅', status: '在线', ip: '192.168.1.101', lastUpdate: '2025-08-30 15:29', version: 'v1.8.5', manufacturer: '大华' },
-    { id: 3, name: '报警主机-01', type: '报警系统', location: '监控中心', status: '在线', ip: '192.168.1.102', lastUpdate: '2025-08-30 15:28', version: 'v2.0.1', manufacturer: '霍尼韦尔' },
-    { id: 4, name: '消防控制器', type: '消防系统', location: '消防控制室', status: '离线', ip: '192.168.1.103', lastUpdate: '2025-08-30 14:15', version: 'v1.9.2', manufacturer: '西门子' },
-    { id: 5, name: '网络交换机-01', type: '网络设备', location: '机房', status: '在线', ip: '192.168.1.104', lastUpdate: '2025-08-30 15:25', version: 'v3.2.0', manufacturer: '思科' },
-    { id: 6, name: '存储服务器', type: '存储设备', location: '机房', status: '在线', ip: '192.168.1.105', lastUpdate: '2025-08-30 15:20', version: 'v2.5.1', manufacturer: '戴尔' },
+    { id: 1, name: '门禁控制器-01', type: '门禁系统', location: '门诊楼1层', status: '在线', ip: '192.168.1.100', lastUpdate: '2025-08-29 15:30', version: 'v2.1.0', manufacturer: '海康威视' },
+    { id: 2, name: '摄像头-001', type: '视频监控', location: '门诊楼大厅', status: '在线', ip: '192.168.1.101', lastUpdate: '2025-08-29 15:29', version: 'v1.8.5', manufacturer: '大华' },
+    { id: 3, name: '报警主机-01', type: '报警系统', location: '监控中心', status: '在线', ip: '192.168.1.102', lastUpdate: '2025-08-29 15:28', version: 'v2.0.1', manufacturer: '霍尼韦尔' },
+    { id: 4, name: '消防控制器', type: '消防系统', location: '消防控制室', status: '离线', ip: '192.168.1.103', lastUpdate: '2025-08-29 14:15', version: 'v1.9.2', manufacturer: '西门子' },
+    { id: 5, name: '网络交换机-01', type: '网络设备', location: '机房', status: '在线', ip: '192.168.1.104', lastUpdate: '2025-08-29 15:25', version: 'v3.2.0', manufacturer: '思科' },
+    { id: 6, name: '存储服务器', type: '存储设备', location: '机房', status: '在线', ip: '192.168.1.105', lastUpdate: '2025-08-29 15:20', version: 'v2.5.1', manufacturer: '戴尔' },
   ];
 
   const userData = [
-    { id: 1, username: 'admin', name: '系统管理员', role: '超级管理员', department: '信息科', status: '启用', lastLogin: '2025-08-30 15:00', email: 'admin@hospital.com', phone: '13800138000' },
-    { id: 2, username: 'security001', name: '张保安', role: '安保人员', department: '保卫科', status: '启用', lastLogin: '2025-08-30 14:30', email: 'security001@hospital.com', phone: '13800138001' },
-    { id: 3, username: 'nurse001', name: '李护士', role: '医护人员', department: '护理部', status: '启用', lastLogin: '2025-08-30 13:45', email: 'nurse001@hospital.com', phone: '13800138002' },
-    { id: 4, username: 'doctor001', name: '王医生', role: '医护人员', department: '急诊科', status: '禁用', lastLogin: '2025-08-30 10:20', email: 'doctor001@hospital.com', phone: '13800138003' },
-    { id: 5, username: 'manager001', name: '赵主任', role: '部门主管', department: '行政部', status: '启用', lastLogin: '2025-08-30 12:15', email: 'manager001@hospital.com', phone: '13800138004' },
+    { id: 1, username: 'admin', name: '系统管理员', role: '超级管理员', department: '信息科', status: '启用', lastLogin: '2025-08-29 15:00', email: 'admin@hospital.com', phone: '13800138000' },
+    { id: 2, username: 'security001', name: '张保安', role: '安保人员', department: '保卫科', status: '启用', lastLogin: '2025-08-29 14:30', email: 'security001@hospital.com', phone: '13800138001' },
+    { id: 3, username: 'nurse001', name: '李护士', role: '医护人员', department: '护理部', status: '启用', lastLogin: '2025-08-29 13:45', email: 'nurse001@hospital.com', phone: '13800138002' },
+    { id: 4, username: 'doctor001', name: '王医生', role: '医护人员', department: '急诊科', status: '禁用', lastLogin: '2025-08-29 10:20', email: 'doctor001@hospital.com', phone: '13800138003' },
+    { id: 5, username: 'manager001', name: '赵主任', role: '部门主管', department: '行政部', status: '启用', lastLogin: '2025-08-29 12:15', email: 'manager001@hospital.com', phone: '13800138004' },
   ];
 
   const systemConfig = {
@@ -134,17 +134,17 @@ const SystemManagement: React.FC = () => {
   };
 
   const systemLogs = [
-    { id: 1, level: 'INFO', message: '系统启动成功', time: '2025-08-30 15:30:00', user: 'system', module: '系统核心' },
-    { id: 2, level: 'WARN', message: '设备192.168.1.103离线', time: '2025-08-30 14:15:30', user: 'system', module: '设备监控' },
-    { id: 3, level: 'INFO', message: '用户admin登录成功', time: '2025-08-30 15:00:15', user: 'admin', module: '用户认证' },
-    { id: 4, level: 'ERROR', message: '数据库连接超时', time: '2025-08-30 14:45:20', user: 'system', module: '数据库' },
-    { id: 5, level: 'INFO', message: '自动备份完成', time: '2025-08-30 02:00:00', user: 'system', module: '备份系统' },
+    { id: 1, level: 'INFO', message: '系统启动成功', time: '2025-08-29 15:30:00', user: 'system', module: '系统核心' },
+    { id: 2, level: 'WARN', message: '设备192.168.1.103离线', time: '2025-08-29 14:15:30', user: 'system', module: '设备监控' },
+    { id: 3, level: 'INFO', message: '用户admin登录成功', time: '2025-08-29 15:00:15', user: 'admin', module: '用户认证' },
+    { id: 4, level: 'ERROR', message: '数据库连接超时', time: '2025-08-29 14:45:20', user: 'system', module: '数据库' },
+    { id: 5, level: 'INFO', message: '自动备份完成', time: '2025-08-29 02:00:00', user: 'system', module: '备份系统' },
   ];
 
   const maintenanceTasks = [
-    { id: 1, name: '数据库优化', status: '进行中', progress: 65, startTime: '2025-08-30 14:00', estimatedTime: '30分钟' },
-    { id: 2, name: '系统更新', status: '等待中', progress: 0, startTime: '2025-08-30 16:00', estimatedTime: '45分钟' },
-    { id: 3, name: '设备检测', status: '已完成', progress: 100, startTime: '2025-08-30 13:00', estimatedTime: '20分钟' },
+    { id: 1, name: '数据库优化', status: '进行中', progress: 65, startTime: '2025-08-29 14:00', estimatedTime: '30分钟' },
+    { id: 2, name: '系统更新', status: '等待中', progress: 0, startTime: '2025-08-29 16:00', estimatedTime: '45分钟' },
+    { id: 3, name: '设备检测', status: '已完成', progress: 100, startTime: '2025-08-29 13:00', estimatedTime: '20分钟' },
   ];
 
   // 实时数据更新

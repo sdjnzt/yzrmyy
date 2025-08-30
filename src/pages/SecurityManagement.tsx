@@ -77,7 +77,7 @@ const SecurityManagement: React.FC = () => {
       status: '在岗', 
       location: '门诊楼', 
       shift: '白班',
-      lastCheckIn: '2025-08-30 08:00:00',
+      lastCheckIn: '2025-08-29 08:00:00',
       experience: '5年'
     },
     { 
@@ -90,7 +90,7 @@ const SecurityManagement: React.FC = () => {
       status: '在岗', 
       location: '急诊科', 
       shift: '白班',
-      lastCheckIn: '2025-08-30 08:00:00',
+      lastCheckIn: '2025-08-29 08:00:00',
       experience: '3年'
     },
     { 
@@ -103,7 +103,7 @@ const SecurityManagement: React.FC = () => {
       status: '休息', 
       location: '住院部', 
       shift: '夜班',
-      lastCheckIn: '2025-08-30 20:00:00',
+      lastCheckIn: '2025-08-29 20:00:00',
       experience: '2年'
     },
     { 
@@ -116,7 +116,7 @@ const SecurityManagement: React.FC = () => {
       status: '在岗', 
       location: '停车场', 
       shift: '白班',
-      lastCheckIn: '2025-08-30 08:00:00',
+      lastCheckIn: '2025-08-29 08:00:00',
       experience: '4年'
     },
     {
@@ -129,7 +129,7 @@ const SecurityManagement: React.FC = () => {
       status: '在岗',
       location: '医技楼',
       shift: '白班',
-      lastCheckIn: '2025-08-30 08:00:00',
+      lastCheckIn: '2025-08-29 08:00:00',
       experience: '1年'
     },
     {
@@ -142,7 +142,7 @@ const SecurityManagement: React.FC = () => {
       status: '在岗',
       location: '监控中心',
       shift: '白班',
-      lastCheckIn: '2025-08-30 08:00:00',
+      lastCheckIn: '2025-08-29 08:00:00',
       experience: '8年'
     },
     {
@@ -155,7 +155,7 @@ const SecurityManagement: React.FC = () => {
       status: '休息',
       location: '手术室',
       shift: '夜班',
-      lastCheckIn: '2025-08-14 20:00:00',
+      lastCheckIn: '2025-08-28 20:00:00',
       experience: '3年'
     },
     {
@@ -168,7 +168,7 @@ const SecurityManagement: React.FC = () => {
       status: '在岗',
       location: 'ICU',
       shift: '白班',
-      lastCheckIn: '2025-08-30 08:00:00',
+      lastCheckIn: '2025-08-29 08:00:00',
       experience: '2年'
     },
     {
@@ -181,7 +181,7 @@ const SecurityManagement: React.FC = () => {
       status: '在岗',
       location: '食堂',
       shift: '白班',
-      lastCheckIn: '2025-08-30 08:00:00',
+      lastCheckIn: '2025-08-29 08:00:00',
       experience: '6年'
     },
     {
@@ -194,7 +194,7 @@ const SecurityManagement: React.FC = () => {
       status: '请假',
       location: '后勤区',
       shift: '白班',
-      lastCheckIn: '2025-08-14 08:00:00',
+      lastCheckIn: '2025-08-28 08:00:00',
       experience: '1年'
     },
     {
@@ -207,7 +207,7 @@ const SecurityManagement: React.FC = () => {
       status: '在岗',
       location: '血库',
       shift: '白班',
-      lastCheckIn: '2025-08-30 08:00:00',
+      lastCheckIn: '2025-08-29 08:00:00',
       experience: '4年'
     },
     {
@@ -220,7 +220,7 @@ const SecurityManagement: React.FC = () => {
       status: '在岗',
       location: '保卫科办公室',
       shift: '白班',
-      lastCheckIn: '2025-08-30 08:00:00',
+      lastCheckIn: '2025-08-29 08:00:00',
       experience: '10年'
     },
     {
@@ -233,7 +233,7 @@ const SecurityManagement: React.FC = () => {
       status: '在岗',
       location: '财务科',
       shift: '白班',
-      lastCheckIn: '2025-08-30 08:00:00',
+      lastCheckIn: '2025-08-29 08:00:00',
       experience: '3年'
     },
     {
@@ -246,7 +246,7 @@ const SecurityManagement: React.FC = () => {
       status: '休息',
       location: '周界巡逻',
       shift: '夜班',
-      lastCheckIn: '2025-08-14 20:00:00',
+      lastCheckIn: '2025-08-28 20:00:00',
       experience: '5年'
     },
     {
@@ -259,7 +259,7 @@ const SecurityManagement: React.FC = () => {
       status: '在岗',
       location: '配电房',
       shift: '白班',
-      lastCheckIn: '2025-08-30 08:00:00',
+      lastCheckIn: '2025-08-29 08:00:00',
       experience: '2年'
     }
   ];
@@ -270,8 +270,8 @@ const SecurityManagement: React.FC = () => {
       id: 1, 
       staff: '张建国', 
       route: '门诊楼-急诊科-住院部', 
-      startTime: '2025-08-30 09:00:00', 
-      endTime: '2025-08-30 10:30:00', 
+      startTime: '2025-08-29 09:00:00', 
+      endTime: '2025-08-29 10:30:00', 
       duration: '1小时30分钟', 
       status: '已完成', 
       issues: '无异常',
@@ -281,8 +281,8 @@ const SecurityManagement: React.FC = () => {
       id: 2, 
       staff: '李明华', 
       route: '急诊科-药房-停车场', 
-      startTime: '2025-08-30 10:00:00', 
-      endTime: '2025-08-30 11:00:00', 
+      startTime: '2025-08-29 10:00:00', 
+      endTime: '2025-08-29 11:00:00', 
       duration: '1小时', 
       status: '进行中', 
       issues: '药房门口有人员聚集',
@@ -292,8 +292,8 @@ const SecurityManagement: React.FC = () => {
       id: 3, 
       staff: '王德胜', 
       route: '住院部-门诊楼-后门', 
-      startTime: '2025-08-30 21:00:00', 
-      endTime: '2025-08-30 22:30:00', 
+      startTime: '2025-08-29 21:00:00', 
+      endTime: '2025-08-29 22:30:00', 
       duration: '1小时30分钟', 
       status: '已完成', 
       issues: '后门锁具松动',
@@ -303,8 +303,8 @@ const SecurityManagement: React.FC = () => {
       id: 4,
       staff: '孙建军',
       route: '医技楼-放射科-检验科',
-      startTime: '2025-08-30 14:00:00',
-      endTime: '2025-08-30 15:30:00',
+      startTime: '2025-08-29 14:00:00',
+      endTime: '2025-08-29 15:30:00',
       duration: '1小时30分钟',
       status: '已完成',
       issues: '检验科冰箱温度正常',
@@ -314,8 +314,8 @@ const SecurityManagement: React.FC = () => {
       id: 5,
       staff: '刘志刚',
       route: '监控中心全面检查',
-      startTime: '2025-08-30 13:00:00',
-      endTime: '2025-08-30 13:45:00',
+      startTime: '2025-08-29 13:00:00',
+      endTime: '2025-08-29 13:45:00',
       duration: '45分钟',
       status: '已完成',
       issues: '3号摄像头需要调整角度',
@@ -325,8 +325,8 @@ const SecurityManagement: React.FC = () => {
       id: 6,
       staff: '陈志明',
       route: 'ICU-手术室-血库',
-      startTime: '2025-08-30 11:30:00',
-      endTime: '2025-08-30 12:30:00',
+      startTime: '2025-08-29 11:30:00',
+      endTime: '2025-08-29 12:30:00',
       duration: '1小时',
       status: '已完成',
       issues: '手术室门锁需要润滑',
@@ -336,8 +336,8 @@ const SecurityManagement: React.FC = () => {
       id: 7,
       staff: '黄建军',
       route: '食堂-洗衣房-垃圾站',
-      startTime: '2025-08-30 10:30:00',
-      endTime: '2025-08-30 11:15:00',
+      startTime: '2025-08-29 10:30:00',
+      endTime: '2025-08-29 11:15:00',
       duration: '45分钟',
       status: '已完成',
       issues: '食堂燃气阀门正常',
@@ -347,8 +347,8 @@ const SecurityManagement: React.FC = () => {
       id: 8,
       staff: '吴德胜',
       route: '血库-财务科-院办',
-      startTime: '2025-08-30 09:30:00',
-      endTime: '2025-08-30 10:30:00',
+      startTime: '2025-08-29 09:30:00',
+      endTime: '2025-08-29 10:30:00',
       duration: '1小时',
       status: '已完成',
       issues: '财务科保险柜正常',
@@ -358,8 +358,8 @@ const SecurityManagement: React.FC = () => {
       id: 9,
       staff: '冯志明',
       route: '财务科专项检查',
-      startTime: '2025-08-30 15:00:00',
-      endTime: '2025-08-30 15:30:00',
+      startTime: '2025-08-29 15:00:00',
+      endTime: '2025-08-29 15:30:00',
       duration: '30分钟',
       status: '已完成',
       issues: '现金柜台安全正常',
@@ -369,8 +369,8 @@ const SecurityManagement: React.FC = () => {
       id: 10,
       staff: '田志刚',
       route: '配电房-锅炉房-机房',
-      startTime: '2025-08-30 08:30:00',
-      endTime: '2025-08-30 09:30:00',
+      startTime: '2025-08-29 08:30:00',
+      endTime: '2025-08-29 09:30:00',
       duration: '1小时',
       status: '已完成',
       issues: '配电房温度偏高需通风',
@@ -380,8 +380,8 @@ const SecurityManagement: React.FC = () => {
       id: 11,
       staff: '马国强',
       route: '手术室夜间巡查',
-      startTime: '2025-08-14 22:00:00',
-      endTime: '2025-08-14 22:45:00',
+      startTime: '2025-08-28 22:00:00',
+      endTime: '2025-08-28 22:45:00',
       duration: '45分钟',
       status: '已完成',
       issues: '手术器械室锁具正常',
@@ -391,8 +391,8 @@ const SecurityManagement: React.FC = () => {
       id: 12,
       staff: '秦志强',
       route: '周界围墙巡逻',
-      startTime: '2025-08-14 21:00:00',
-      endTime: '2025-08-14 22:30:00',
+      startTime: '2025-08-28 21:00:00',
+      endTime: '2025-08-28 22:30:00',
       duration: '1小时30分钟',
       status: '已完成',
       issues: '东墙监控盲区发现垃圾堆积',
@@ -402,8 +402,8 @@ const SecurityManagement: React.FC = () => {
       id: 13,
       staff: '张建国',
       route: '门诊楼夜间检查',
-      startTime: '2025-08-14 23:00:00',
-      endTime: '2025-08-14 23:45:00',
+      startTime: '2025-08-28 23:00:00',
+      endTime: '2025-08-28 23:45:00',
       duration: '45分钟',
       status: '已完成',
       issues: '各科室门窗关闭正常',
@@ -413,8 +413,8 @@ const SecurityManagement: React.FC = () => {
       id: 14,
       staff: '李明华',
       route: '急诊科-120站-停车场',
-      startTime: '2025-08-14 19:30:00',
-      endTime: '2025-08-14 20:30:00',
+      startTime: '2025-08-28 19:30:00',
+      endTime: '2025-08-28 20:30:00',
       duration: '1小时',
       status: '已完成',
       issues: '停车场照明需要修理',
@@ -424,8 +424,8 @@ const SecurityManagement: React.FC = () => {
       id: 15,
       staff: '王德胜',
       route: '住院部病区巡查',
-      startTime: '2025-08-14 20:00:00',
-      endTime: '2025-08-14 21:00:00',
+      startTime: '2025-08-28 20:00:00',
+      endTime: '2025-08-28 21:00:00',
       duration: '1小时',
       status: '已完成',
       issues: '病区走廊安全出口畅通',
@@ -440,7 +440,7 @@ const SecurityManagement: React.FC = () => {
       person: '张医生', 
       cardId: 'CARD001', 
       location: '门诊楼1层', 
-      time: '2025-08-30 15:30:00', 
+      time: '2025-08-29 15:30:00', 
       type: '刷卡进入', 
       status: '正常',
       department: '内科'
@@ -450,7 +450,7 @@ const SecurityManagement: React.FC = () => {
       person: '李护士', 
       cardId: 'CARD002', 
       location: '住院部3层', 
-      time: '2025-08-30 15:25:00', 
+      time: '2025-08-29 15:25:00', 
       type: '刷卡进入', 
       status: '正常',
       department: '护理部'
@@ -460,7 +460,7 @@ const SecurityManagement: React.FC = () => {
       person: '王患者', 
       cardId: 'CARD003', 
       location: '急诊科', 
-      time: '2025-08-30 15:20:00', 
+      time: '2025-08-29 15:20:00', 
       type: '刷卡进入', 
       status: '正常',
       department: '急诊科'
@@ -470,7 +470,7 @@ const SecurityManagement: React.FC = () => {
       person: '未知人员', 
       cardId: 'CARD004', 
       location: '药房', 
-      time: '2025-08-30 15:15:00', 
+      time: '2025-08-29 15:15:00', 
       type: '刷卡进入', 
       status: '异常',
       department: '未知'
@@ -480,7 +480,7 @@ const SecurityManagement: React.FC = () => {
       person: '赵医生',
       cardId: 'CARD005',
       location: 'ICU',
-      time: '2025-08-30 15:10:00',
+      time: '2025-08-29 15:10:00',
       type: '刷卡进入',
       status: '正常',
       department: 'ICU'
@@ -490,7 +490,7 @@ const SecurityManagement: React.FC = () => {
       person: '陈主任',
       cardId: 'CARD006',
       location: '手术室',
-      time: '2025-08-30 15:05:00',
+      time: '2025-08-29 15:05:00',
       type: '刷卡进入',
       status: '正常',
       department: '外科'
@@ -500,7 +500,7 @@ const SecurityManagement: React.FC = () => {
       person: '孙护士',
       cardId: 'CARD007',
       location: '血库',
-      time: '2025-08-30 15:00:00',
+      time: '2025-08-29 15:00:00',
       type: '刷卡进入',
       status: '正常',
       department: '检验科'
@@ -510,7 +510,7 @@ const SecurityManagement: React.FC = () => {
       person: '刘药师',
       cardId: 'CARD008',
       location: '药房',
-      time: '2025-08-30 14:55:00',
+      time: '2025-08-29 14:55:00',
       type: '刷卡进入',
       status: '正常',
       department: '药剂科'
@@ -520,7 +520,7 @@ const SecurityManagement: React.FC = () => {
       person: '王主管',
       cardId: 'CARD009',
       location: '财务科',
-      time: '2025-08-30 14:50:00',
+      time: '2025-08-29 14:50:00',
       type: '刷卡进入',
       status: '正常',
       department: '财务科'
@@ -530,7 +530,7 @@ const SecurityManagement: React.FC = () => {
       person: '张技师',
       cardId: 'CARD010',
       location: '放射科',
-      time: '2025-08-30 14:45:00',
+      time: '2025-08-29 14:45:00',
       type: '刷卡进入',
       status: '正常',
       department: '放射科'
@@ -540,7 +540,7 @@ const SecurityManagement: React.FC = () => {
       person: '李工程师',
       cardId: 'CARD011',
       location: '配电房',
-      time: '2025-08-30 14:40:00',
+      time: '2025-08-29 14:40:00',
       type: '刷卡进入',
       status: '正常',
       department: '后勤科'
@@ -550,7 +550,7 @@ const SecurityManagement: React.FC = () => {
       person: '马主任',
       cardId: 'CARD012',
       location: '院办',
-      time: '2025-08-30 14:35:00',
+      time: '2025-08-29 14:35:00',
       type: '刷卡进入',
       status: '正常',
       department: '院办'
@@ -560,7 +560,7 @@ const SecurityManagement: React.FC = () => {
       person: '过期卡片',
       cardId: 'CARD013',
       location: '手术室',
-      time: '2025-08-30 14:30:00',
+      time: '2025-08-29 14:30:00',
       type: '刷卡进入',
       status: '异常',
       department: '未知'
@@ -570,7 +570,7 @@ const SecurityManagement: React.FC = () => {
       person: '杨医生',
       cardId: 'CARD014',
       location: '检验科',
-      time: '2025-08-30 14:25:00',
+      time: '2025-08-29 14:25:00',
       type: '刷卡进入',
       status: '正常',
       department: '检验科'
@@ -580,7 +580,7 @@ const SecurityManagement: React.FC = () => {
       person: '周护士',
       cardId: 'CARD015',
       location: '新生儿科',
-      time: '2025-08-30 14:20:00',
+      time: '2025-08-29 14:20:00',
       type: '刷卡进入',
       status: '正常',
       department: '妇产科'
@@ -590,7 +590,7 @@ const SecurityManagement: React.FC = () => {
       person: '无效卡片',
       cardId: 'CARD016',
       location: '血库',
-      time: '2025-08-30 14:15:00',
+      time: '2025-08-29 14:15:00',
       type: '刷卡进入',
       status: '异常',
       department: '未知'
@@ -600,7 +600,7 @@ const SecurityManagement: React.FC = () => {
       person: '吴医生',
       cardId: 'CARD017',
       location: '病理科',
-      time: '2025-08-30 14:10:00',
+      time: '2025-08-29 14:10:00',
       type: '刷卡进入',
       status: '正常',
       department: '病理科'
@@ -610,7 +610,7 @@ const SecurityManagement: React.FC = () => {
       person: '郑主任',
       cardId: 'CARD018',
       location: '信息科',
-      time: '2025-08-30 14:05:00',
+      time: '2025-08-29 14:05:00',
       type: '刷卡进入',
       status: '正常',
       department: '信息科'
@@ -620,7 +620,7 @@ const SecurityManagement: React.FC = () => {
       person: '黄保洁',
       cardId: 'CARD019',
       location: '食堂',
-      time: '2025-08-30 14:00:00',
+      time: '2025-08-29 14:00:00',
       type: '刷卡进入',
       status: '正常',
       department: '后勤科'
@@ -630,7 +630,7 @@ const SecurityManagement: React.FC = () => {
       person: '冯医生',
       cardId: 'CARD020',
       location: '心内科',
-      time: '2025-08-30 13:55:00',
+      time: '2025-08-29 13:55:00',
       type: '刷卡进入',
       status: '正常',
       department: '心内科'
@@ -643,7 +643,7 @@ const SecurityManagement: React.FC = () => {
       id: 1,
       type: '医疗纠纷',
       location: '门诊大厅',
-      time: '2025-08-30 14:30:00',
+      time: '2025-08-29 14:30:00',
       description: '患者对诊疗费用有异议，情绪激动',
       handler: '张建国',
       status: '已处理',
@@ -654,7 +654,7 @@ const SecurityManagement: React.FC = () => {
       id: 2,
       type: '设备故障',
       location: '急诊科',
-      time: '2025-08-30 11:20:00',
+      time: '2025-08-29 11:20:00',
       description: '急诊科自动门故障，无法正常开关',
       handler: '李明华',
       status: '已处理',
@@ -665,7 +665,7 @@ const SecurityManagement: React.FC = () => {
       id: 3,
       type: '可疑人员',
       location: '住院部',
-      time: '2025-08-30 09:15:00',
+      time: '2025-08-29 09:15:00',
       description: '发现陌生人在病区游荡，行为可疑',
       handler: '王德胜',
       status: '已处理',
@@ -676,7 +676,7 @@ const SecurityManagement: React.FC = () => {
       id: 4,
       type: '火灾隐患',
       location: '食堂',
-      time: '2025-08-14 16:45:00',
+      time: '2025-08-28 16:45:00',
       description: '食堂后厨堆放杂物阻挡安全通道',
       handler: '黄建军',
       status: '已处理',
@@ -687,7 +687,7 @@ const SecurityManagement: React.FC = () => {
       id: 5,
       type: '停车纠纷',
       location: '停车场',
-      time: '2025-08-14 15:30:00',
+      time: '2025-08-28 15:30:00',
       description: '两车主因停车位发生争执',
       handler: '赵志强',
       status: '已处理',
@@ -698,7 +698,7 @@ const SecurityManagement: React.FC = () => {
       id: 6,
       type: '盗窃事件',
       location: '病房',
-      time: '2025-08-14 13:20:00',
+      time: '2025-08-28 13:20:00',
       description: '患者反映手机丢失',
       handler: '陈志明',
       status: '处理中',
